@@ -1,0 +1,28 @@
+<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<symbol id="icon-architecture" viewBox="0 0 32 32">
+<path d="M0 0h32v32h-32z"></path>
+</symbol>
+<symbol id="icon-design" viewBox="0 0 32 32">
+<path d="M0 0h32v32h-32z"></path>
+</symbol>
+<symbol id="icon-facebook" viewBox="0 0 34 32">
+<path d="M1.522 0.238h32.019v31.106h-32.019z"></path>
+</symbol>
+<symbol id="icon-instagram" viewBox="0 0 32 32">
+<path d="M0.699 9.152c0-4.418 3.582-8 8-8v0h14.19c4.418 0 8 3.582 8 8v0 14.192c0 4.418-3.582 8-8 8v0h-14.19c-4.418 0-8-3.582-8-8v0-14.192z"></path>
+</symbol>
+<symbol id="icon-linked-in" viewBox="0 0 34 32">
+<path d="M0.926 0.66h31.366v30.494h-31.366z"></path>
+</symbol>
+<symbol id="icon-logo" viewBox="0 0 105 32">
+<path d="M0 0h104.183v32h-104.183z"></path>
+</symbol>
+<symbol id="icon-planning" viewBox="0 0 32 32">
+<path d="M0 0h32v32h-32z"></path>
+</symbol>
+<symbol id="icon-twitter" viewBox="0 0 32 32">
+<path d="M1.058 0.227h30.494v30.494h-30.494z"></path>
+</symbol>
+</defs>
+</svg>
