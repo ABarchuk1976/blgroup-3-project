@@ -14,6 +14,11 @@ width: 1376px;
 margin: 0 auto;
 }
 
+.link {
+text-decoration: none;
+color: inherit;
+}
+
 A2. All color by var()
 
 C1. Build code only in your section <-- -->

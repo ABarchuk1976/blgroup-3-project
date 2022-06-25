@@ -1,6 +1,10 @@
 :root {
   --body-bg: #ffffff;
   --main-color: #646464;
+  --header-menu-color: #212121;
+  --header-menu-accend-color: #646464;
+  --header-btn-color: #ffffff;
+  --header-btn-bg: #caa892;
 }
 
 body {
@@ -37,6 +41,19 @@ img {
   height: auto;
 }
 
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
 .section {
   width: auto;
   padding-top: 60px;
@@ -47,3 +64,64 @@ img {
   width: 1376px;
   margin: 0 auto;
 }
+
+/* header */
+.header {
+  width: 100%;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  margin: 0 auto;
+}
+
+.header .container {
+  display: flex;
+}
+
+.logo-link {
+  display: block;
+  width: 135px;
+  height: 47px;
+  background-color: var(--body-bg);
+  background-image: url(../images/logo.png);
+  background-size: 135px 47px;
+  background-repeat: no-repeat;
+  margin-right: auto;
+}
+
+.header-menu {
+  display: flex;
+  margin-right: 65px;
+  text-transform: uppercase;
+  height: 100%;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.36;
+  color: var(--header-menu-color);
+}
+
+.header-menu-item {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.header-menu-item + .header-menu-item {
+  margin-left: 50px;
+}
+
+.current {
+  color: var(--header-menu-accend-color);
+}
+
+.header-button {
+  font-size: 16px;
+  line-height: 1.36;
+  background-color: var(--header-btn-bg);
+  color: var(--header-btn-color);
+  border-radius: 15px 0;
+  padding: 5px 20px;
+  cursor: pointer;
+}
+
+/* header */
