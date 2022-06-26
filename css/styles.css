@@ -259,4 +259,10 @@ button {
   background-repeat: no-repeat;
   border-radius: 140px 0;
 }
+
+.second-title.experience {
+  font-size: 50px;
+  line-height: 1.3;
+  letter-spacing: 0.04em;
+}
 /* fourth section */
