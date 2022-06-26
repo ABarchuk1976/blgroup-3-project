@@ -14,6 +14,8 @@
   --frame-margin: 25px;
 
   --container-width: 1376px;
+  --section-padding-top: 60px;
+  --section-padding-bottom: 60px;
 }
 
 body {
@@ -65,8 +67,8 @@ button {
 
 .section {
   width: auto;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: var(--section-padding-top);
+  padding-bottom: var(--section-padding-bottom);
 }
 
 .container {
@@ -174,6 +176,7 @@ button {
 .container.about {
   display: flex;
   justify-content: space-between;
+  padding-bottom: calc(var(--section-padding-bottom)+var(--frame-margin));
 }
 
 .about-frame {
