@@ -207,3 +207,49 @@ button {
 }
 
 /* third section */
+
+/* fourth section */
+.container.experience {
+  display: flex;
+  justify-content: space-between;
+}
+
+.experience-left-block {
+  display: flex;
+  align-items: center;
+}
+
+.experience-left-thumb {
+  background-color: inherit;
+  background-image: url(../images/twenty-img.png);
+  width: 327px;
+  height: 221px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 46px;
+}
+
+.experience-frame {
+  position: relative;
+  background-color: transparent;
+  width: 681px;
+  height: 726px;
+  border-radius: 140px 0;
+  border: var(--frame-border);
+  margin-left: var(--frame-margin);
+  margin-bottom: var(--frame-margin);
+}
+
+.experience-thumb {
+  position: absolute;
+  right: 25px;
+  bottom: 25px;
+  background-color: inherit;
+  background-image: url(../images/shelves-img.jpeg);
+  width: 681px;
+  height: 726px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 140px 0;
+}
+/* fourth section */
