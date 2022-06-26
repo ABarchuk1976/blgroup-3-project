@@ -12,6 +12,8 @@
 
   --frame-border: 2px solid #b0855b;
   --frame-margin: 25px;
+
+  --container-width: 1376px;
 }
 
 body {
@@ -68,8 +70,10 @@ button {
 }
 
 .container {
-  width: 1376px;
+  width: var(--container-width);
   margin: 0 auto;
+  padding-left: var(--frame-margin);
+  padding-right: var(--frame-margin);
 }
 
 .subtitle {
