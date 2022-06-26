@@ -172,11 +172,12 @@ button {
 /* header */
 
 /* third section */
-
+.section.about {
+  padding-bottom: calc(var(--section-padding-bottom) + var(--frame-margin));
+}
 .container.about {
   display: flex;
   justify-content: space-between;
-  padding-bottom: calc(var(--section-padding-bottom)+var(--frame-margin));
 }
 
 .about-frame {
@@ -212,6 +213,9 @@ button {
 /* third section */
 
 /* fourth section */
+.section.experience {
+  padding-top: calc(var(--section-padding-top) + var(--frame-margin));
+}
 .container.experience {
   display: flex;
   justify-content: space-between;
