@@ -1,5 +1,6 @@
 :root {
   --body-bg: #ffffff;
+  --second-body-bg: #f8f8f8;
   --main-color: #646464;
   --main-block-btn-color: #ffffff;
   --main-block-btn-bg: #37806b;
@@ -12,12 +13,12 @@
 
   --frame-border: 2px solid #b0855b;
   --frame-margin: 25px;
-
+  --second-frame-margin: 16px;
   --container-width: 1376px;
 }
 
 body {
-  font-family: 'Open Sans', 'Arial', sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 1.67;
   color: var(--main-color);
@@ -77,7 +78,7 @@ button {
 }
 
 .subtitle {
-  font-family: 'Poppins', 'Arial', sans-serif;
+  font-family: "Poppins", "Arial", sans-serif;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.4;
@@ -85,7 +86,7 @@ button {
 }
 
 .second-title {
-  font-family: 'Poppins', 'Arial', sans-serif;
+  font-family: "Poppins", "Arial", sans-serif;
   font-weight: 500;
   font-size: 48px;
   line-height: 1.19;
@@ -207,3 +208,73 @@ button {
 }
 
 /* third section */
+
+/* five section */
+
+.section-news {
+  background-color: var(--second-body-bg);
+}
+
+.news-subtitle {
+  display: block;
+  text-align: center;
+}
+
+.news-title {
+  text-align: center;
+  margin-top: 21px;
+  margin-bottom: 82px;
+}
+
+.news-design {
+  display: flex;
+  justify-content: space-between;
+}
+
+.news-design-item {
+  display: block;
+  max-width: 610px;
+  margin-right: 153px;
+}
+
+.news-design-item:last-child {
+  margin-right: 0px;
+}
+
+.news-frame {
+  margin-bottom: 42px;
+  position: relative;
+  margin-right: 170px;  
+  width: 554px;
+  height: 387px;
+  border-radius: 100px 0;
+  background-color: transparent;
+  border: var(--frame-border);
+}
+
+.news-thumb {
+  position: absolute;
+  bottom: var(--second-frame-margin);
+  right: var(--second-frame-margin);
+  display: block;
+  width: 554px;
+  height: 387px;
+  border-radius: 100px 0;
+}
+
+.news-subject {
+  font-size: 30px;
+  line-height: 0.93;
+  color: var(--title-color);
+}
+
+.news-text {
+  max-width: 603px;
+}
+
+.news-button {
+  min-width: 271px;
+  padding-left: 13px 35px;
+}
+
+/* /five section */
