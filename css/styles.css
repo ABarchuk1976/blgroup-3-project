@@ -78,18 +78,19 @@ button {
 
 .subtitle {
   font-family: 'Poppins', 'Arial', sans-serif;
-  ont-weight: 500;
+  font-weight: 500;
   font-size: 20px;
   line-height: 1.4;
-  margin-bottom: 6px;
+  text-transform: uppercase;
 }
 
 .second-title {
   font-family: 'Poppins', 'Arial', sans-serif;
-  ont-weight: 500;
+  font-weight: 500;
   font-size: 48px;
   line-height: 1.19;
   letter-spacing: -0.01em;
+  margin-top: 6px;
   margin-bottom: 22px;
   color: var(--title-color);
 }
@@ -104,6 +105,7 @@ button {
   background-color: var(--main-block-btn-bg);
   border-radius: 20px 0;
   margin-top: 46px;
+  cursor: pointer;
 }
 
 /* header */
