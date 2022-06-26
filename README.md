@@ -22,3 +22,5 @@ color: inherit;
 A2. All color by var()
 
 C1. Build code only in your section <-- -->
+
+Fixed: header, 3d and 4th blocks
