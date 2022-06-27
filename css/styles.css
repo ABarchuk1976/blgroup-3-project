@@ -4,7 +4,7 @@
   --main-color: #646464;
   --main-block-btn-color: #ffffff;
   --main-block-btn-bg: #37806b;
-  --accend-bg: ##caa892;
+  --accend-bg: #caa892;
   --header-menu-color: #212121;
   --title-color: #212121;
   --header-menu-accend-color: #646464;
@@ -164,7 +164,7 @@ button {
   font-size: 16px;
   line-height: 1.36;
   background-color: var(--header-btn-bg);
-  color: var(--header-btn-color);
+  color: var(--main-block-btn-color: );
   border-radius: 15px 0;
   padding: 5px 20px;
   cursor: pointer;
@@ -255,7 +255,7 @@ button {
 
 .servis-list .item:hover,
 .servis-list .item:active {
-  background-color: var(--header-btn-bg);
+  background-color: var(--accend-bg);
   color: var(--header-btn-color);
   cursor: pointer;
 }
