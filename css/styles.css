@@ -4,7 +4,7 @@
   --main-color: #646464;
   --main-block-btn-color: #ffffff;
   --main-block-btn-bg: #37806b;
-  --accend-bg: ##caa892;
+  --accend-bg: #caa892;
   --header-menu-color: #212121;
   --title-color: #212121;
   --header-menu-accend-color: #646464;
@@ -164,13 +164,107 @@ button {
   font-size: 16px;
   line-height: 1.36;
   background-color: var(--header-btn-bg);
-  color: var(--header-btn-color);
+  color: var(--main-block-btn-color: );
   border-radius: 15px 0;
   padding: 5px 20px;
   cursor: pointer;
 }
 
 /* header */
+
+/* first section */
+.modern .container {
+  display: flex;
+  align-items: center;
+}
+
+.modern .descr {
+  width: 606px;
+  margin-right: 54px;
+}
+
+.descr .text {
+  margin-bottom: 46px;
+}
+
+.modern .img-frame {
+  position: relative;
+  width: 716px;
+  height: 626px;
+  border: var(--frame-border);
+  border-radius: 140px 0;
+}
+
+.img-frame .image {
+  position: absolute;
+  right: var(--frame-margin);
+  bottom: var(--frame-margin);
+  width: 100%;
+  height: 100%;
+  border-radius: 140px 0;
+  background-image: url(../images/hero-img.jpeg);
+  background-position: center;
+}
+
+/* first section */
+
+/* second section */
+
+.we-do .second-title {
+  margin-bottom: 50px;
+}
+
+.we-do .servis-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.servis-list .item {
+  display: flex;
+  border-radius: 60px 0;
+  box-shadow: 0px 8px 20px rgb(0 0 0 / 14%);
+  padding: 40px 22px 35px 37px;
+}
+
+.item-wrap {
+  width: 312px;
+}
+
+.item::before {
+  filter: brightness(0);
+  display: block;
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
+  content: "";
+  background-size: contain;
+}
+
+.item:nth-child(1)::before {
+  background-image: url(../images/design.png);
+}
+
+.item:nth-child(2)::before {
+  background-image: url(../images/architecture.png);
+}
+
+.item:nth-child(3)::before {
+  background-image: url(../images/planning.png);
+}
+
+.servis-list .item:hover,
+.servis-list .item:active {
+  background-color: var(--accend-bg);
+  color: var(--header-btn-color);
+  cursor: pointer;
+}
+
+.servis-list .item:hover:before,
+.servis-list .item:active:before {
+  filter: brightness(10);
+}
+
+/* second section */
 
 /* third section */
 .section.about {
