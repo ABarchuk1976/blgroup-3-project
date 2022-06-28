@@ -449,3 +449,61 @@ button {
 }
 
 /* /five section */
+
+/* footer */
+
+.footer {
+  background-color: var(--second-body-bg);
+}
+
+.footer-container {
+  padding-top: calc(var(--section-padding-top) + var(--frame-margin));
+ 
+}
+
+.footer-team {
+  display: flex;
+  align-items: flex-start;
+  border-bottom: 1px solid #c4c4c4;  
+  padding-bottom: 69px;
+}
+
+.footer-logo-text {
+  margin-top: 15px;
+  width: 350px;
+}
+
+.footer-title {  
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 0.93;
+  color: var(--header-menu-color);
+  margin-bottom: 15px;
+}
+
+.nav-links {
+  margin-left: 37px;
+  margin-right: 101px;
+  min-width: 182px;
+}
+
+.nav-company {
+  margin-right: 101px;
+  min-width: 144px;
+}
+.nav-contact {
+  margin-right: 53px;
+  min-width: 200px;
+}
+
+
+.copyright {
+  font-weight: 400;
+font-size: 18px;
+line-height: 1.39;
+
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 22px;
+}
+.copyright-accent {color: var(--main-block-btn-bg);}
