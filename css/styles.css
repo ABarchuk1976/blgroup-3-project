@@ -191,24 +191,38 @@ button {
 /* header */
 
 /* first section */
-.modern .container {
+.hero .container {
   display: flex;
   align-items: center;
 }
 
-.modern .descr {
-  width: 606px;
-  margin-right: 54px;
+.hero .subtitle {
+  display: block;
+  margin-bottom: 12px;
+}
+
+.hero .head-title {
+  font-weight: 600;
+  font-size: 72px;
+  line-height: 1.08;
+  margin-bottom: 23px;
+  font-family: 'Poppins';
+  color: var(--title-color);
+}
+
+.hero .container {
+  justify-content: space-between;
 }
 
 .descr .text {
   margin-bottom: 46px;
 }
 
-.modern .img-frame {
+.hero .img-frame {
   position: relative;
-  width: 716px;
+  width: 681px;
   height: 626px;
+  margin-right: calc(-1 * var(--frame-margin));
   border: var(--frame-border);
   border-radius: 140px 0;
 }
@@ -229,6 +243,11 @@ button {
 /* second section */
 
 .we-do .second-title {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.we-do-title {
   margin-bottom: 50px;
 }
 
@@ -246,6 +265,14 @@ button {
 
 .item-wrap {
   width: 312px;
+}
+
+.item .item-wrap-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 0.75;
+  margin-bottom: 15px;
+  color: var(--header-menu-color);
 }
 
 .item::before {
@@ -275,6 +302,11 @@ button {
   background-color: var(--accend-bg);
   color: var(--header-btn-color);
   cursor: pointer;
+}
+
+.servis-list .item:hover .item-wrap-title,
+.servis-list .item:active .item-wrap-title {
+  color: var(--header-btn-color);
 }
 
 .servis-list .item:hover:before,
