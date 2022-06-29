@@ -14,9 +14,17 @@
   --frame-border: 2px solid #b0855b;
   --frame-margin: 25px;
   --second-frame-margin: 16px;
-  --container-width: 1376px;
+  --container-width: 1426px;
   --section-padding-top: 60px;
   --section-padding-bottom: 60px;
+
+  --subscription-line-color: #c4c4c4;
+
+  --form-intup-color: #646464;
+  --form-submit-color: #ffffff;
+  --form-submit-bg: #37806b;
+  --form-intup-bg: #eeeeee;
+  --form-input-padding-left: 27px;
 }
 
 body {
@@ -38,6 +46,7 @@ p,
 ul,
 li {
   margin: 0;
+  padding: 0;
 }
 
 ul,
@@ -55,10 +64,6 @@ img {
 
 button {
   padding: 0;
-  border: none;
-  font: inherit;
-  color: inherit;
-  background-color: transparent;
 }
 
 .link {
@@ -67,7 +72,7 @@ button {
 }
 
 .section {
-  width: auto;
+  min-width: var(--container-width);
   padding-top: var(--section-padding-top);
   padding-bottom: var(--section-padding-bottom);
 }
@@ -115,6 +120,19 @@ button {
 .main-block-button:focus {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /* header */
@@ -481,6 +499,78 @@ button {
 }
 
 /* /five section */
+
+/* six */
+
+.subscription {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.subscription-title {
+  position: relative;
+  display: block;
+  font-family: 'Poppins', 'Arial', sans-serif;
+  font-size: 48px;
+  line-height: 1.188;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+
+  color: var(--title-color);
+  margin-bottom: 40px;
+}
+
+.subscription-title::after {
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  content: '';
+  width: 461px;
+  height: 1px;
+  border-bottom: 1px solid var(--subscription-line-color);
+}
+
+.subscription-text {
+  display: inline-block;
+  width: 646px;
+  line-height: 1.56;
+  margin-bottom: 29px;
+}
+
+.form-subscription {
+  display: flex;
+}
+
+.form-subscription-input {
+  display: block;
+  width: 592px;
+  height: 50px;
+  padding-left: var(--form-input-padding-left);
+
+  color: var(--form-intup-color);
+  background-color: var(--form-intup-bg);
+  border: none;
+  border-radius: 20px 0 0 0;
+}
+
+.form-subscription-submit {
+  width: 180px;
+  height: 50px;
+
+  color: var(--form-submit-color);
+  background-color: var(--form-submit-bg);
+  border-radius: 0 0 20px 0;
+  border: none;
+
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+/* six */
 
 /* footer */
 
