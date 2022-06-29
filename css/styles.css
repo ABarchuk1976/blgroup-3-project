@@ -201,6 +201,7 @@ button {
   line-height: 1.36;
   background-color: var(--header-btn-bg);
   color: var(--main-block-btn-color);
+  border: none;
   border-radius: 15px 0;
   padding: 5px 20px;
   cursor: pointer;
@@ -595,8 +596,13 @@ button {
 }
 
 .footer-container {
+  display: flex;
   padding-top: 93px;
-  padding-bottom: 127px;
+  padding-bottom: 69px;
+}
+
+.footer-logo {
+  margin-right: auto;
 }
 
 .footer .logo-link {
