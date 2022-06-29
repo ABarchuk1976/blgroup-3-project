@@ -27,6 +27,10 @@
   --form-input-padding-left: 27px;
 
   --underfooter-line-color: #c4c4c4;
+
+  --footer-social-icon-color: #ffffff;
+  --footer-social-icon-bg: #d5d5d5;
+  --footer-social-icon-accent-bg: #37806b;
 }
 
 body {
@@ -618,21 +622,6 @@ button {
   margin-bottom: 15px;
 }
 
-.nav-links {
-  margin-left: 37px;
-  margin-right: 101px;
-  min-width: 182px;
-}
-
-.nav-company {
-  margin-right: 101px;
-  min-width: 144px;
-}
-.nav-contact {
-  margin-right: 53px;
-  min-width: 200px;
-}
-
 .copyright {
   font-weight: 400;
   font-size: 18px;
@@ -644,4 +633,47 @@ button {
 }
 .copyright-accent {
   color: var(--main-block-btn-bg);
+}
+
+.footer-group-list {
+  display: flex;
+  justify-content: baseline;
+}
+
+.footer-group-item + .footer-group-item {
+  margin-left: 85px;
+}
+
+.social-item-list {
+  display: flex;
+}
+
+.social-item + .social-item {
+  margin-left: 8px;
+}
+
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 37px;
+  height: 37px;
+  background-color: var(--footer-social-icon-bg);
+  border: none;
+  border-radius: 50%;
+  list-style: none;
+
+  transition: background-color 250ms linear;
+}
+
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--footer-social-icon-accent-bg);
+}
+
+.social-icon {
+  display: block;
+  width: 20px;
+  height: 20px;
+  fill: var(--footer-social-icon-color);
 }
