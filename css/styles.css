@@ -25,6 +25,8 @@
   --form-submit-bg: #37806b;
   --form-intup-bg: #eeeeee;
   --form-input-padding-left: 27px;
+
+  --underfooter-line-color: #c4c4c4;
 }
 
 body {
@@ -575,18 +577,32 @@ button {
 /* footer */
 
 .footer {
+  position: relative;
   background-color: var(--second-body-bg);
+}
+.underfooter {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  min-width: var(--container-width);
+  height: 58px;
+  border-top: 1px solid var(--underfooter-line-color);
 }
 
 .footer-container {
-  padding-top: calc(var(--section-padding-top) + var(--frame-margin));
+  padding-top: 93px;
+  padding-bottom: 127px;
+}
+
+.footer .logo-link {
+  background-color: var(--second-body-bg);
+  margin-right: 73px;
 }
 
 .footer-team {
   display: flex;
   align-items: flex-start;
-  border-bottom: 1px solid #c4c4c4;
-  padding-bottom: 69px;
 }
 
 .footer-logo-text {
